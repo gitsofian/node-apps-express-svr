@@ -1,0 +1,18 @@
+[
+  {
+    "title": "To-Do Nummer 1 vom Server",
+    "checked": false
+  },
+  {
+    "title": "To-Do Nummer 2 vom Server",
+    "checked": true
+  },
+  {
+    "title": "To-Do Nummer 3 vom Server",
+    "checked": false
+  },
+  {
+    "title": "To-Do Nummer 4 vom Server",
+    "checked": false
+  }
+]
