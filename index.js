@@ -19,6 +19,25 @@ app.use(
 );
 app.use(bodyParser.json());
 
+app.get(`/`, (req, res) => {
+  res.send(`
+    <h1>Hello</h1>
+  `);
+});
+
+app.get(`/api/todo`, (req, res) => {
+  const dataPath = `data/todo.json`;
+
+  fs.readFile(dataPath, "utf8", function (err, data) {
+    if (!err && data) {
+      const parsedData = JSON.parse(data);
+      res.json(parsedData);
+    } else {
+      res.json([]);
+    }
+  });
+});
+
 app.get(`/api/todo`, (req, res) => {
   const dataPath = `data/todo.json`;
 
