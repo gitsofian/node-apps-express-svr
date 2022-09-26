@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const path = require("path");
 const fs = require("fs");
 
-const app = express();
+const app = express(); // comment hier!
 const port = 80;
 const corsOptions = {
   origin: "*",
