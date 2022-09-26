@@ -5,7 +5,7 @@ const path = require("path");
 const fs = require("fs");
 
 const app = express(); // comment hier!
-const port = 80;
+const port = 3000;
 const corsOptions = {
   origin: "*",
   optionsSuccessStatus: 200,
